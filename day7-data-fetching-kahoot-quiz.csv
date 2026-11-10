@@ -1,0 +1,11 @@
+Question,Answer 1,Answer 2,Answer 3,Answer 4,Time limit (sec),Correct answer(s)
+"Why is data fetching considered a side effect in React?","It mutates props directly","It talks to an external system outside React","It runs before render","It disables JSX rendering",20,2
+"Where should asynchronous API requests take place in a component?","Directly in the component body","Inside a useState hook","Inside a useEffect callback","Inside JSX export statements",20,3
+"What does response.json() return when calling fetch()?","Raw string JSON","A Promise resolving to parsed JS data","A boolean status code","A React JSX element",20,2
+"What happens if you omit the dependency array [] in useEffect with fetch()?","Fetch never runs","Fetch runs only on unmount","Fetch runs infinitely on every render","It throws a syntax error",20,3
+"Why check ""if (!response.ok)"" after a fetch() call?","fetch() doesn't reject on 404/500 HTTP errors","It forces browser reload","It clears component state","It cancels pending promises",20,1
+"What is the best way to handle search filtering on API data?","Fetch from API on every keypress","Filter data in useEffect","Compute filtered data directly during render","Store filtered data in localStorage",20,3
+"Why do we need an explicit loading state variable?","To speed up network bandwidth","API data takes time to arrive after initial render","React requires loading state for compilation","To prevent CSS from breaking",20,2
+"How should an async function be structured inside useEffect?","useEffect(async () => {})","Declare async function inside effect and invoke it","Make component itself async","useEffect cannot run async code",20,2
+"How can AI assist with data fetching errors during development?","By re-writing browser network protocols","By explaining network errors and missing response.ok checks","By hosting external APIs locally","By bypassing CORS restrictions",20,2
+"What is the correct execution sequence during initial fetch?","Render -> Effect -> Fetch -> SetState -> Re-render","Fetch -> Render -> SetState","Effect -> Render -> Fetch","SetState -> Fetch -> Render",20,1
